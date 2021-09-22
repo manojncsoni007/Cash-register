@@ -7,12 +7,6 @@ const notesAvailable = [2000, 500, 100, 20, 10, 5, 1];
 const nextButton = document.querySelector('#next-btn');
 let hidden = document.querySelectorAll('.hide');
 
-nextButton.addEventListener('click', () => {
-    hidden.style.visibility = "visible";
-
-
-})
-
 checkBtn.addEventListener('click', () => {
     hide(message);
     if (billAmount.value > 0) {
