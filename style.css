@@ -136,7 +136,7 @@ img {
 @media (max-width: 900px) {
     footer {
         position: relative;
-        margin-top: 10rem;
+        top: 50px;
         text-align: center;
         margin: auto;
     }
