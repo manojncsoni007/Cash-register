@@ -82,10 +82,23 @@ td {
     display: none;
 }
 
+.tableContainer {
+    display: none;
+}
+
 .showItem {
     display: block;
 }
 
 .hideItem {
     display: none;
+}
+
+.notes {
+    font-weight: 600;
+}
+
+.no-of-notes {
+    color: red;
+    font-weight: 600;
 }

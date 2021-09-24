@@ -6,11 +6,16 @@ const noOfNotes = document.querySelectorAll('.no-of-notes');
 const notesAvailable = [2000, 500, 100, 20, 10, 5, 1];
 const nextButton = document.querySelector('#next-btn');
 let hiddenContainer = document.querySelector('.hiddenContainer');
+let tableContainer = document.querySelector('.tableContainer');
+
+function showMessage(msg) {
+    message.style.display = "block";
+    message.innerText = msg;
+}
 
 nextButton.addEventListener('click', () => {
     hiddenContainer.classList.add("showItem");
     nextButton.classList.add('hideItem');
-    console.log('connected');
 })
 
 checkBtn.addEventListener('click', () => {
@@ -19,6 +24,7 @@ checkBtn.addEventListener('click', () => {
         if (givenCash.value >= billAmount.value) {
             let returnAmount = givenCash.value - billAmount.value;
             calculateChange(returnAmount);
+            tableContainer.classList.add('showItem');
         } else {
             showMessage('Give cash atleast equal of amount');
         }
@@ -37,10 +43,7 @@ function calculateChange(amount) {
     }
 }
 
-function showMessage(msg) {
-    message.style.display = "block";
-    message.innerText = msg;
-}
+
 
 function hide(param) {
     param.style.display = 'none';
