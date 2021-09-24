@@ -77,3 +77,15 @@ td {
     border-collapse: collapse;
     text-align: center;
 }
+
+.hiddenContainer {
+    display: none;
+}
+
+.showItem {
+    display: block;
+}
+
+.hideItem {
+    display: none;
+}

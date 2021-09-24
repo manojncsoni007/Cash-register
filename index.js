@@ -5,7 +5,13 @@ let message = document.querySelector("#error-msg");
 const noOfNotes = document.querySelectorAll('.no-of-notes');
 const notesAvailable = [2000, 500, 100, 20, 10, 5, 1];
 const nextButton = document.querySelector('#next-btn');
-let hidden = document.querySelectorAll('.hide');
+let hiddenContainer = document.querySelector('.hiddenContainer');
+
+nextButton.addEventListener('click', () => {
+    hiddenContainer.classList.add("showItem");
+    nextButton.classList.add('hideItem');
+    console.log('connected');
+})
 
 checkBtn.addEventListener('click', () => {
     hide(message);
